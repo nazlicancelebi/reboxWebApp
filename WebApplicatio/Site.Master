@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApplicatio.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> / ReBox</title>
+
+    <link href="Content/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="Resources/icon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+    <form runat="server">
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <header class="mb-auto">
+                <nav class="navbar fixed-top navbar-dark navbar-expand-md">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" runat="server" href="~/">
+                                <img src="Resources/main.png" alt="main icon">
+                            </a>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <div class="nav navbar-nav ml-auto">
+                                <a runat="server" class="nav-item nav-link active" href="~/">HOME<span class="sr-only">(current)</span></a>
+                                <a runat="server" class="nav-item nav-link" href="~/About">ABOUT</a>
+                                <a runat="server" class="nav-item nav-link" href="~/Contact">CONTACT</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <footer class="mastfoot mt-auto text-center">
+                <div class="inner">
+                    <p>Made by <a href="https://github.com/re-box">@re-box</a>.</p>
+                </div>
+            </footer>
+
+        </div>
+    </form>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</body>
+</html>

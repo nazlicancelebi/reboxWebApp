@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="recycleboxModelStoreContainer" CdmEntityContainer="recycleboxEntities">
+    <EntitySetMapping Name="RecycleBox">
+      <EntityTypeMapping TypeName="recycleboxModel.RecycleBox">
+        <MappingFragment StoreEntitySet="RecycleBox">
+          <ScalarProperty Name="idlocation" ColumnName="idlocation" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
